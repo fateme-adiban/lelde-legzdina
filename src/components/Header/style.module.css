@@ -72,4 +72,17 @@
   .header .nav .el {
     padding: 5px 0px;
   }
+
+  .header .icons {
+    margin-right: 5px;
+  }
+
+  .header .logo p {
+    font-size: 25px;
+  }
+
+  .header .logo {
+    align-self: flex-start;
+    margin-left: -5%;
+  }
 }

@@ -6,6 +6,8 @@
   --font-cutive-mono: "Cutive Mono", monospace;
 }
 
+/* Basic */
+
 html,
 body {
   overflow-x: hidden;
@@ -22,4 +24,64 @@ body::after {
   pointer-events: none;
   background-image: url("/noise.svg");
   mix-blend-mode: overlay;
+}
+
+/* Word */
+
+.paragraph {
+  @apply flex flex-wrap;
+}
+
+.word {
+  @apply mr-2.5 mt-3 relative;
+}
+
+.shadow {
+  @apply absolute opacity-[0.3];
+}
+
+/* Gallery */
+
+.container {
+  @apply h-[400vh] relative mt-60 mx-auto;
+}
+
+.sticky {
+  @apply sticky top-0 h-screen overflow-hidden;
+}
+
+.el {
+  @apply w-full h-full absolute top-0 flex items-center justify-center;
+}
+
+.imageContainer {
+  @apply w-[25vw] h-[25vh] relative;
+}
+
+.el:nth-of-type(2) .imageContainer {
+  @apply -top-[33vh] left-[5vw] w-[35vw] h-[32vh];
+}
+
+.el:nth-of-type(3) .imageContainer {
+  @apply -top-[15vh] -left-[24vw] w-[18vw] h-[60vh];
+}
+
+.el:nth-of-type(4) .imageContainer {
+  @apply left-[25vw] w-[20vw] h-[25vh];
+}
+
+.el:nth-of-type(5) .imageContainer {
+  @apply top-[32vh]  w-[25vw] h-[30vh];
+}
+
+.el:nth-of-type(6) .imageContainer {
+  @apply top-[32vh] -left-[25vw] w-[20vw] h-[30vh];
+}
+
+.el:nth-of-type(7) .imageContainer {
+  @apply top-[30vh] left-[24vw] w-[15vw] h-[30vh];
+}
+
+img {
+  object-fit: cover;
 }

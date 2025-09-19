@@ -3,6 +3,8 @@ import { useEffect } from "react"
 import Lenis from "lenis"
 import Header from "../components/Header"
 import Hero from "../components/Hero"
+import About from "@/components/About"
+import Gallery from "@/components/Gallery"
 
 export default function Home() {
   useEffect(() => {
@@ -20,6 +22,8 @@ export default function Home() {
     <main>
       <Header />
       <Hero />
+      <About />
+      <Gallery />
     </main>
   )
 }

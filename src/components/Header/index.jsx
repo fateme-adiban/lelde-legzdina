@@ -105,8 +105,15 @@ export default function Index() {
         </div>
 
         <div className={styles.icons}>
-          <Image onClick={() => window.open("https://www.linkedin.com/in/leldelegzdina", "_blank")} src="/linkedin.svg" width={16} height={16} alt="linkedin icon" />
-          <Image onClick={() => window.open("mailto:legzdinalelde@gmail.com")} src="/email.svg" width={20} height={16} alt="email icon" />
+          <div className="hidden md:flex gap-2">
+            <Image onClick={() => window.open("https://www.linkedin.com/in/leldelegzdina", "_blank")} src="/linkedin.svg" width={16} height={16} alt="linkedin icon" />
+            <Image onClick={() => window.open("mailto:legzdinalelde@gmail.com")} src="/email.svg" width={20} height={16} alt="email icon" />
+          </div>
+
+          <div className="md:hidden flex gap-2 mt-3">
+            <Image onClick={() => window.open("https://www.linkedin.com/in/leldelegzdina", "_blank")} src="/linkedin-white.svg" width={16} height={16} alt="linkedin icon" />
+            <Image onClick={() => window.open("mailto:legzdinalelde@gmail.com")} src="/email-white.svg" width={20} height={16} alt="email icon" />
+          </div>
         </div>
       </div>
     </>
