@@ -10,7 +10,6 @@
 
 html,
 body {
-  overflow-x: hidden;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -40,10 +39,26 @@ body::after {
   @apply absolute opacity-[0.3];
 }
 
+/* Slide-up */
+
+.text span,
+.slide-up span {
+  margin-right: 4px;
+  font-size: 18px;
+  font-family: var(--font-noto-serif);
+}
+
+.text .mask,
+.slide-up .mask {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+}
+
 /* Gallery */
 
 .container {
-  @apply h-[400vh] relative mt-60 mx-auto;
+  @apply h-[400vh] relative mt-[40vh] sm:mt-[10vh] xl:mt-80 mx-auto;
 }
 
 .sticky {
@@ -55,7 +70,7 @@ body::after {
 }
 
 .imageContainer {
-  @apply w-[25vw] h-[25vh] relative;
+  @apply w-[25vw] h-[30vh] relative;
 }
 
 .el:nth-of-type(2) .imageContainer {
@@ -79,7 +94,7 @@ body::after {
 }
 
 .el:nth-of-type(7) .imageContainer {
-  @apply top-[30vh] left-[24vw] w-[15vw] h-[30vh];
+  @apply top-[30vh] left-[25vw] w-[20vw] h-[25vh];
 }
 
 img {

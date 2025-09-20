@@ -18,7 +18,7 @@ export default function Index() {
       </div>
 
       <div className="hidden md:flex flex-col justify-center items-center pr-10 2xl:pr-0">
-        <h2 className="text-[15px] xl:text-[20px] font-noto-serif uppercase mb-4">Personal & corporate branding</h2>
+        <h2 className="text-[15px] xl:text-[18px] font-noto-serif uppercase mb-4">Personal & corporate branding</h2>
         <h1 className="text-[30px] lg:text-[35px] xl:text-[60px] leading-[110%] font-instrument-serif text-center max-w-[500px] xl:max-w-[550px]">Build LinkedIn clarity, confidence & community in 60 days</h1>
         <div className="relative flex items-center mt-15">
           <button onClick={() => window.open("https://calendly.com/leldel/30minchat", "_blank")} className="text-[18px] font-noto-serif uppercase cursor-pointer">
