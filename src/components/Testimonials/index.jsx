@@ -55,7 +55,7 @@ const index = () => {
 
   return (
     <section id="testimonials" className="relative min-h-screen flex flex-col mt-20 sm:mt-50 md:mt-20 lg:mt-50">
-      <h3 className="text-[40px] font-instrument-serif text-center">What do my clients say about me?</h3>
+      <h3 className="text-[40px] font-instrument-serif text-center leading-[100%]">What do my clients say about me?</h3>
 
       <div ref={container} className="relative mt-[10vh]">
         {projects.map((project, i) => {
