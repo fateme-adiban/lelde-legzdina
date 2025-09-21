@@ -55,7 +55,7 @@ export default function Index() {
   ]
 
   return (
-    <div ref={container} className="container">
+    <div id="gallery" ref={container} className="container">
       <div className="sticky">
         {pictures.map(({ src, scale }, index) => {
           return (

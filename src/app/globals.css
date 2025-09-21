@@ -4,6 +4,7 @@
   --font-instrument-serif: "Instrument Serif", serif;
   --font-noto-serif: "Noto Serif", serif;
   --font-cutive-mono: "Cutive Mono", monospace;
+  --font-playfair-display: "Playfair Display", serif;
 }
 
 /* Basic */
@@ -44,8 +45,6 @@ body::after {
 .text span,
 .slide-up span {
   margin-right: 4px;
-  font-size: 18px;
-  font-family: var(--font-noto-serif);
 }
 
 .text .mask,

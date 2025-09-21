@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import { useRef } from "react"
 import { useInView, motion } from "framer-motion"
 import { slideUp } from "@/animation"
 
@@ -14,7 +14,7 @@ const index = () => {
       <h3 className="text-[40px] font-instrument-serif text-center">How can i help you?</h3>
 
       <div className="flex flex-col pl-[8%] mt-30">
-        <p className="text max-w-[90%] md:!max-w-[450px] ">
+        <p className="text font-noto-serif max-w-[90%] md:!max-w-[420px] ">
           {phrase.split(" ").map((word, index) => {
             return (
               <span key={index} className="mask">

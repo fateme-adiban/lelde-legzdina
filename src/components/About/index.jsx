@@ -1,8 +1,16 @@
-import React from "react"
+import { useRef } from "react"
+import { useInView, motion } from "framer-motion"
+import { slideUp } from "@/animation"
 import Image from "next/image"
 import Word from "../Word"
 
 const Index = () => {
+  const phrase_1 = "You’ve built something incredible. The only problem? Not enough people know you exist. We fix that."
+  const phrase_2 = "You’ve put in the work. You’ve built something worth noticing (even your dad’s bragging about it). But on LinkedIn, visibility isn’t automatic."
+
+  const description = useRef(null)
+  const isInView = useInView(description)
+
   return (
     <>
       <div id="about" className="flex flex-col md:flex-row px-12 mt-20 lg:mt-50 justify-between">
@@ -10,8 +18,28 @@ const Index = () => {
           <h2 className="text-[35px] xl:text-[60px] font-instrument-serif max-w-[500px] leading-[100%]">
             <Word value="Make Your LinkedIn Impossible to Ignore" />
           </h2>
-          <p className="text-[18px] xl:text-[20px] font-noto-serif max-w-[80%] sm:max-w-[350px]">You’ve built something incredible. The only problem? Not enough people know you exist. We fix that.</p>
-          <p className="text-[18px] xl:text-[20px] font-noto-serif max-w-[80%] sm:max-w-[370px]">You’ve put in the work. You’ve built something worth noticing (even your dad’s bragging about it). But on LinkedIn, visibility isn’t automatic.</p>
+          <p ref={description} className="text text-[18px] xl:text-[20px] font-noto-serif max-w-[80%] sm:max-w-[350px]">
+            {phrase_1.split(" ").map((word, index) => {
+              return (
+                <span key={index} className="mask">
+                  <motion.span variants={slideUp} custom={index} animate={isInView ? "open" : "closed"} key={index}>
+                    {word}
+                  </motion.span>
+                </span>
+              )
+            })}
+          </p>
+          <p className="text text-[18px] xl:text-[20px] font-noto-serif max-w-[80%] sm:max-w-[370px]">
+            {phrase_2.split(" ").map((word, index) => {
+              return (
+                <span key={index} className="mask">
+                  <motion.span variants={slideUp} custom={index} animate={isInView ? "open" : "closed"} key={index}>
+                    {word}
+                  </motion.span>
+                </span>
+              )
+            })}
+          </p>
         </div>
 
         <Image src="/abt1.png" width={600} height={1179} alt="about image" className="md:w-[300] md:h-[500px] lg:w-[400px] xl:w-[600px] xl:h-auto mt-15 md:mt-0" />
