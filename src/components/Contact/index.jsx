@@ -10,9 +10,9 @@ const Index = () => {
   const isInView = useInView(description)
 
   return (
-    <section ref={description} id="contact" className="relative min-h-screen overflow-x-hidden mt-5 lg:mt-30">
+    <section ref={description} id="contact" className="relative min-h-screen overflow-x-hidden mt-15 lg:mt-30">
       <div className="flex items-center justify-center min-h-screen w-full">
-        <div className="max-w-[90%] h-[550px] 2xl:max-w-[1291px] md:min-h-[653px] rounded-[40px] bg-[url('/img-contact-2.png')] w-full bg-cover bg-center flex flex-col gap-15 justify-center items-center">
+        <div className="max-w-[90%] h-[550px] 2xl:max-w-[1291px] md:min-h-[653px] rounded-[40px] bg-[url('/img-contact-2.webp')] w-full bg-cover bg-center flex flex-col gap-15 justify-center items-center">
           <h3 className="text-[30px] md:text-[40px] font-instrument-serif text-center mt-8 md:-mt-40 lg:mt-8 text-white">Need an unfair advantage?</h3>
           <p className="text text-[45px] sm:text-[12vw] lg:text-[150px] font-playfair-display font-bold text-white uppercase leading-[100%] tracking-[-1%] max-w-[900px] text-center">
             {phrase.split(" ").map((word, index) => {

@@ -6,7 +6,7 @@ export default function Index() {
   return (
     <section id="home" className="relative min-h-screen overflow-x-hidden flex flex-col md:flex-row gap-[8%]">
       <div className="relative w-full sm:w-auto">
-        <Image src="/img-hero.png" width={720} height={917} alt="hero image" className="w-full h-screen md:max-w-[720px] md:h-[917px]" />
+        <Image src="/img-hero.webp" width={720} height={917} alt="hero image" className="w-full h-screen md:max-w-[720px] md:h-[917px]" />
 
         <div className="absolute inset-0 flex flex-col justify-end mb-10 items-center md:hidden bg-black/30">
           <h2 className="text-[15px] font-noto-serif uppercase mb-4 text-white">Personal & corporate branding</h2>

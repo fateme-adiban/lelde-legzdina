@@ -1,13 +1,13 @@
 import { useRef } from "react"
 import Image from "next/image"
 import { useScroll, useTransform, motion } from "framer-motion"
-import Picture1 from "../../../public/gallery3.png"
-import Picture2 from "../../../public/gallery2.png"
-import Picture3 from "../../../public/gallery1.png"
-import Picture4 from "../../../public/gallery7.png"
-import Picture5 from "../../../public/gallery6.png"
-import Picture6 from "../../../public/gallery8.png"
-import Picture7 from "../../../public/gallery4.png"
+import Picture1 from "../../../public/gallery3.webp"
+import Picture2 from "../../../public/gallery2.webp"
+import Picture3 from "../../../public/gallery1.webp"
+import Picture4 from "../../../public/gallery7.webp"
+import Picture5 from "../../../public/gallery6.webp"
+import Picture6 from "../../../public/gallery8.webp"
+import Picture7 from "../../../public/gallery4.webp"
 
 export default function Index() {
   const container = useRef(null)
